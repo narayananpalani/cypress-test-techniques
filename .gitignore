@@ -1,0 +1,20 @@
+# Logs
+logs
+*.log
+
+node_modules
+
+# Debug log from npm
+npm-debug.log
+
+
+# Extra             #
+#####################
+#cypress/videos
+#cypress/screenshots
+allure-report/*
+allure-results/
+mochawesome-report/
+cypress/videos
+cypress/screenshots
+

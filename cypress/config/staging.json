@@ -1,0 +1,18 @@
+{
+    "baseUrl": "https://staging.com",
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "overwrite": false,
+        "html": true,
+        "json": true
+    },
+    "env": {
+        "ENVIRONMENT": "staging",
+        "CYPRESS_RETRIES": 2
+    },
+    "chromeWebSecurity": false,
+    "requestTimeout": 30000,
+    "defaultCommandTimeout": 60000,
+    "numTestsKeptInMemory": 10,
+    "pageLoadTimeout": 120000
+}

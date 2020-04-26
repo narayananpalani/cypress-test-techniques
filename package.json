@@ -1,0 +1,64 @@
+{
+  "name": "cypress-test-techniques-udemy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run lint && npm run stop-only",
+    "start": "serve --listen ${PORT:-8080}",
+    "types": "tsc --noEmit",
+    "lint": "eslint --fix cypress/**/*.js app/assets/js/scripts.js",
+    "test": "npx cypress run --record --key ab295972-7dbd-4ff6-b1ff-4ddb934c10d0 -s 'cypress/integration/features/SampleFunctionalTest.feature' -r mochawesome --reporter-options 'reportDir=cypress/report/mochawesome-report,overwrite=false,html=true,json=true,timestamp=mmddyyyy_HHMMss'",
+    "install": "npm install mocha mochawesome mochawesome-merge mochawesome-report-generator",
+    "pretest": "npm run lint && npm run types",
+    "stop-only": "stop-only -f cypress/integration",
+    "warn-only": "stop-only -f cypress/integration --warn",
+    "test:mochawesomereport": "cypress run -r mochawesome -s cypress/integration/features/SampleFunctionalTest.feature",
+    "test:allurereport": "cypress run -b chrome -r mocha-allure-reporter -s cypress/integration/features/SampleFunctionalTest.feature",
+    "generatereport": "allure generate allure-results --clean -o allure-report && allure open allure-report",
+    "test:visual-base": "cypress run -b chrome --env updateSnapshots=true  --spec cypress/integration/features/SampleVisualTest.feature",
+    "test:visual-actual": "cypress run -b chrome --env failOnSnapshotDiff=false --reporter cypress-image-snapshot/reporter --spec cypress/integration/features/SampleVisualTest.feature"
+  },
+  "author": "Narayanan Palani",
+  "license": "ISC",
+  "dependencies": {
+    "mochawesome-report-generator": "4.1.0",
+    "npm-run-all": "4.1.2",
+    "serve": "11.3.0",
+    "through": "^2.3.8"
+  },
+  "devDependencies": {
+    "@bahmutov/print-env": "1.2.0",
+    "@typescript-eslint/eslint-plugin": "2.24.0",
+    "@typescript-eslint/parser": "2.24.0",
+    "allure-commandline": "2.0.0",
+    "colon-names": "1.0.0",
+    "cypress": "3.8.3",
+    "cypress-cucumber-preprocessor": "1.11.0",
+    "cypress-image-snapshot": "3.1.1",
+    "cypress-plugin-retries": "1.2.0",
+    "cypress-visual-regression": "1.0.4",
+    "cypress-xpath": "1.3.0",
+    "eslint": "5.16.0",
+    "eslint-plugin-cypress": "2.8.1",
+    "eslint-plugin-cypress-dev": "2.1.0",
+    "eslint-plugin-mocha": "5.3.0",
+    "eslint-plugin-vue": "6.2.2",
+    "mocha": "^5.2.0",
+    "mocha-allure-reporter": "1.4.0",
+    "mocha-gherkin": "0.2.0",
+    "mochawesome": "^3.1.2",
+    "mochawesome-merge": "^2.1.0",
+    "start-server-and-test": "1.10.6",
+    "stop-build": "1.1.0",
+    "stop-only": "3.1.0",
+    "typescript": "3.7.4",
+    "yaml-lint": "1.2.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run warn-only && npm run lint:yaml",
+      "pre-push": "npm run stop-only && npm run lint:yaml"
+    }
+  }
+}

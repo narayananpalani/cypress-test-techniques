@@ -1,0 +1,12 @@
+{
+  "projectId": "j5qpgn",
+  "baseUrl": "https://opensource-demo.orangehrmlive.com",
+  "waitForAnimations": true,
+  "animationDistanceThreshold": 50,
+  "pageLoadTimeout": 120000,
+  "defaultCommandTimeout": 60000,
+  "requestTimeout": 30000,
+  "chromeWebSecurity": false,
+  "watchForFileChanges": false,
+  "trashAssetsBeforeRuns": true
+}
