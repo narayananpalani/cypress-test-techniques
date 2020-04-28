@@ -1,6 +1,6 @@
 import { loginOrangehrmPage } from '../../pageobjects/LoginOrangehrm_PageObjects'
 Given('I open OrangeHRM homepage', () => {
-    cy.visit('/index.php/auth/login');
+    cy.visit('/');
 });
 
 //      When I SignIn as user:
