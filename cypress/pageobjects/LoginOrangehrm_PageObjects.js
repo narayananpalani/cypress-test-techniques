@@ -32,7 +32,7 @@ export const loginOrangehrmPage = {
         cy.fixture('testdata').then((data) =>{
             cy.xpath(label_Welcome)
             .invoke('text')
-            .should('contain', data.username);
+            .should('contain', "Welcome "+data.username);
         })
        
     }

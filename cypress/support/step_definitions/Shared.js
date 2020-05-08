@@ -1,4 +1,3 @@
-
 // capture snapshot
 then('I capture snapshot and compare {string}', (string) => {
     cy.matchImageSnapshot(string);

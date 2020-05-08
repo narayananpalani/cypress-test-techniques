@@ -1,4 +1,3 @@
-const admin_tabxPath_Homepage= "//*[@id='menu_admin_viewAdminModule']";
 const admin_tabselector_Homepage= '#menu_admin_viewAdminModule';
 const userDetail_Adminpage= "//*[@id='ohrmList_chkSelectAll']";
 const pimTab_Homepage= "//*[@id='menu_pim_viewPimModule']";
@@ -11,10 +10,15 @@ const pieChartLabel1= "//*[@id='pieLabel1']/div";
 const pieChartLabel2= "//*[@id='pieLabel2']/div";
 const pieChartLabel3= "//*[@id='pieLabel3']/div";
 const pieChartLabel4= "//*[@id='pieLabel4']/div";
+const admin_tabxPath_Homepage= "//*[@id='menu_admin_viewAdminModule']";
+const salesMgr_PIM= "//*[@id='ohrmList_chkSelectRecord_6']";
+const jobTitleDropdown_pim= "//*[@id='empsearch_job_title']";
+const searchBtn_pim = "//*[@id='searchBtn']";
+const searchResults= "//*[@id='resultTable']";
 
 export const homeOrangehrmPage = {
     checkAdminTab() {
-        cy.xpath(admin_tabxPath_Homepage)
+      cy.xpath(admin_tabxPath_Homepage)
         .invoke('show').should('be.visible');
     }, 
 
@@ -28,8 +32,8 @@ export const homeOrangehrmPage = {
      },
      clickAdminTab(){
         cy.xpath(admin_tabxPath_Homepage)
-        .invoke('show').should('be.visible')
-        .click();
+          .invoke('show').should('be.visible')
+          .click();
      },
      clickAdminResultTableR1C2(){
         cy.xpath(admin_resultTableRow1Column2)
@@ -70,10 +74,32 @@ export const homeOrangehrmPage = {
       .should('be.checked')
       .uncheck();
    },
+     selectSalesmgrEmployee(){
+      cy.xpath(salesMgr_PIM)
+        .not('[disabled]')
+        .check();
+   },
+   SalesmgrEmployeeAssertion(){
+      cy.xpath(salesMgr_PIM)
+        .not('[disabled]')
+        .should('be.checked');
+   },
    noEmployeesSelected() {
       cy.xpath(selectAll_pimTab)
       .not('[disabled]')
       .should('not.be.checked');
+   },
+   jobTitleDropdown(){
+      cy.get('select').xpath(jobTitleDropdown_pim)
+       .select('Sales Manager').should('have.value', '1');
+   },
+   clickSearchbtn(){
+      cy.xpath(searchBtn_pim)
+        .click();
+   },
+   resultTableDisplay(){
+      cy.xpath(searchResults)
+      .invoke('show').should('be.visible')
    },
    mousedownAdminTab(){
       cy.xpath(admin_tabxPath_Homepage)
@@ -107,6 +133,7 @@ export const homeOrangehrmPage = {
    },
    mousActionsonDashboardGraph(){
       cy.xpath(graph_dashboard)
+        .as('graph')
         .trigger('mousedown')
         .trigger('mousemove')
         .trigger('mouseup')

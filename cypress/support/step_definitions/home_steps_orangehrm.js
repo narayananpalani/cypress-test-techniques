@@ -110,3 +110,37 @@ When ('I see the page in iPad2 version', () => {
 });
  
 
+//And I select sales manager in the employees list
+When ('I select sales manager in the employees list', () => {
+   homeOrangehrmPage.selectSalesmgrEmployee();
+});
+
+
+//Then sales manager should be selected successfully
+Then('sales manager should be selected successfully', () => {
+   homeOrangehrmPage.SalesmgrEmployeeAssertion();
+});
+
+// And I click on dropdown of jobtitle
+When ('I click on dropdown of jobtitle', () => {
+   homeOrangehrmPage.jobTitleDropdown();
+});
+// And I select sales manager as dropdown selection
+When ('I select sales manager as dropdown selection', () => {
+   homeOrangehrmPage.jobTitleDropdownSalesMgrSelection();
+});
+
+// Then sales manager in dropdown should be selected successfully
+Then('sales manager in dropdown should be selected successfully', () => {
+   homeOrangehrmPage.SalesmgrDrpDownAssertion();
+});
+
+//And I click on search button of pim tab
+When ('I click on search button of pim tab', () => {
+   homeOrangehrmPage.clickSearchbtn();
+});
+
+//Then search results should be displayed successfully
+Then('search results should be displayed successfully', () => {
+   homeOrangehrmPage.resultTableDisplay();
+});

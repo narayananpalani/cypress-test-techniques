@@ -15,7 +15,7 @@ services:
       - sentimentalyzer
     environment:
       # pass base url to test pointing at the web application
-      - CYPRESS_baseUrl=https://www.imdb.com/?ref_=nv_home:8123
+      - CYPRESS_baseUrl=https://opensource-demo.orangehrmlive.com
     # share the current folder as volume to avoid copying
     working_dir: /e2e
     volumes:
