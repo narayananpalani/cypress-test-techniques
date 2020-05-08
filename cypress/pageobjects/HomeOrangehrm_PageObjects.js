@@ -15,6 +15,7 @@ const salesMgr_PIM= "//*[@id='ohrmList_chkSelectRecord_6']";
 const jobTitleDropdown_pim= "//*[@id='empsearch_job_title']";
 const searchBtn_pim = "//*[@id='searchBtn']";
 const searchResults= "//*[@id='resultTable']";
+const supervisorPIMtab=  "//*[@id='empsearch_supervisor_name']";
 
 export const homeOrangehrmPage = {
     checkAdminTab() {
@@ -157,6 +158,25 @@ export const homeOrangehrmPage = {
    },
    viewPortipad2(){
       cy.viewport('ipad-2');
+   },
+
+   //accessibility related methods:
+   navJobtitleusingKeyboard(){
+      cy.xpath(supervisorPIMtab)
+        .click()
+        .tab()
+        .focused(jobTitleDropdown_pim);
+   },
+
+   selectjobTitleusingKeyboard(){
+      cy.focused(jobTitleDropdown_pim)
+        .type('{downarrow}sales{downarrow}{enter}');
+   },
+   pressSearchusingKeyboard(){
+      cy.xpath(jobTitleDropdown_pim)
+        .tab()
+        .tab()
+        .focused(searchBtn_pim).type('{enter}');
    }
 };
 

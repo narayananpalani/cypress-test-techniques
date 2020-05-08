@@ -144,3 +144,17 @@ When ('I click on search button of pim tab', () => {
 Then('search results should be displayed successfully', () => {
    homeOrangehrmPage.resultTableDisplay();
 });
+
+//Accessibility Steps:
+//And I navigate to jobtitle dropdown using keyboard functionality
+When ('I navigate to jobtitle dropdown using keyboard functionality', () => {
+   homeOrangehrmPage.navJobtitleusingKeyboard();
+});
+//And I press enter on dropdown of jobtitle to choose sales manager
+When ('I press enter on dropdown of jobtitle to choose sales manager', () => {
+   homeOrangehrmPage.selectjobTitleusingKeyboard();
+});
+//And I press enter on search button of pim tab
+When ('I press enter on search button of pim tab', () => {
+   homeOrangehrmPage.pressSearchusingKeyboard();
+});
