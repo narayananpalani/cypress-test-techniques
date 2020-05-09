@@ -173,10 +173,8 @@ export const homeOrangehrmPage = {
         .type('{downarrow}sales{downarrow}{enter}');
    },
    pressSearchusingKeyboard(){
-      cy.xpath(jobTitleDropdown_pim)
-        .tab()
-        .tab()
-        .focused(searchBtn_pim).type('{enter}');
+      cy.xpath(searchBtn_pim)
+        .type('{enter}');
    }
 };
 

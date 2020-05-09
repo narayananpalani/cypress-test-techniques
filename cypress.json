@@ -8,5 +8,10 @@
   "requestTimeout": 30000,
   "chromeWebSecurity": false,
   "watchForFileChanges": false,
-  "trashAssetsBeforeRuns": true
+  "trashAssetsBeforeRuns": true,
+   "reporter": "mochawesome",
+    "reporterOptions": {
+      "overwrite": false
+    }
+  
 }

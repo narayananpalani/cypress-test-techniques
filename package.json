@@ -13,11 +13,11 @@
     "pretest": "npm run lint && npm run types",
     "stop-only": "stop-only -f cypress/integration",
     "warn-only": "stop-only -f cypress/integration --warn",
-    "test:mochawesomereport": "cypress run -r mochawesome -s cypress/integration/features/SampleFunctionalTest.feature",
-    "test:allurereport": "cypress run -b chrome -r mocha-allure-reporter -s cypress/integration/features/SampleFunctionalTest.feature",
+    "test:mochawesomereport": "cypress run -r mochawesome -s cypress/integration/features/*.feature",
+    "test:allurereport": "cypress run -b chrome -r mocha-allure-reporter -s cypress/integration/features/*.feature",
     "generatereport": "allure generate allure-results --clean -o allure-report && allure open allure-report",
-    "test:visual-base": "cypress run -b chrome --env updateSnapshots=true  --spec cypress/integration/features/SampleVisualTest.feature",
-    "test:visual-actual": "cypress run -b chrome --env failOnSnapshotDiff=false --reporter cypress-image-snapshot/reporter --spec cypress/integration/features/SampleVisualTest.feature"
+    "test:visual-base": "cypress run -b chrome --env updateSnapshots=true  --spec cypress/integration/features/*VisualTest.feature",
+    "test:visual-actual": "cypress run -b chrome --env failOnSnapshotDiff=false --reporter cypress-image-snapshot/reporter --spec cypress/integration/features/*VisualTest.feature"
   },
   "author": "Narayanan Palani",
   "license": "ISC",
