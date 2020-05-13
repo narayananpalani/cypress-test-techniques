@@ -1,11 +1,12 @@
-const inputUserName = '#txtUsername'; 
+//const inputUserName = '#txtUsername'; 
+const inputUserName = "//input[@id='txtUsername']"; 
 const inputUserPassword = '#txtPassword';
 const loginButtonSubmit = "//*[@id='btnLogin']";
 const label_Welcome = "//*[@id='welcome']";
 
 export const loginOrangehrmPage = {
     enterUsername(args) {
-        cy.get(inputUserName)
+        cy.xpath(inputUserName)
             .click()
             .clear()
             .type(args);
