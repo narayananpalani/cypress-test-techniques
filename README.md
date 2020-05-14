@@ -1,6 +1,14 @@
 # Cypress-Test-Techniques for functional,visual regression,accessibility and compatibility tests with Cucumber BDD and AWS Amplify Console - CI/CD Pipeline
 Complete videos,exercises,quiz and assignments: www.udemy.com/course/cypressio
 
+# Credits to:
+Samuel Anthony Custer for cypress-axe
+Vinayak Titti for cypress-boilerplate
+abramenal for cypress-file-upload
+Ben Kucera for cypress-plugin-tab
+Gleb Bahmutov for cypress-xpath
+Michael Herman for cypress-visual-regression
+
 # Dependencies:
 1. npm install
 2. npm link

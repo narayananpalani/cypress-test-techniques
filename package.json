@@ -1,6 +1,6 @@
 {
   "name": "cypress-test-techniques-udemy",
-  "version": "1.0.0",
+  "version": "1.3.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -36,6 +36,7 @@
     "allure-commandline": "2.0.0",
     "colon-names": "1.0.0",
     "cypress": "^4.4.1",
+    "cypress-axe": "^0.8.1",
     "cypress-cucumber-preprocessor": "1.11.0",
     "cypress-file-upload": "^4.0.6",
     "cypress-image-snapshot": "3.1.1",

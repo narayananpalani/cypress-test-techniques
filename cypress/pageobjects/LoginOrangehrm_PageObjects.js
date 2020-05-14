@@ -1,10 +1,14 @@
-//const inputUserName = '#txtUsername'; 
+import { terminalLog } from '../support/commands.js'
 const inputUserName = "//input[@id='txtUsername']"; 
 const inputUserPassword = '#txtPassword';
 const loginButtonSubmit = "//*[@id='btnLogin']";
 const label_Welcome = "//*[@id='welcome']";
 
 export const loginOrangehrmPage = {
+    launchPage(){
+        cy.visit('/')
+          .injectAxe();
+    },
     enterUsername(args) {
         cy.xpath(inputUserName)
             .click()
@@ -36,6 +40,9 @@ export const loginOrangehrmPage = {
             .should('contain', "Welcome "+data.username);
         })
        
+    },
+    a11yAuditAxe(){
+        cy.checkA11y(null, null, terminalLog);
     }
 
 }
