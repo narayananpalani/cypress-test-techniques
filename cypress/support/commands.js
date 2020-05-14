@@ -1,5 +1,6 @@
 const compareSnapshotCommand = require('cypress-visual-regression/dist/command')
 import { addMatchImageSnapshotCommand } from 'cypress-image-snapshot/command'
+import 'cypress-file-upload';
 
 Cypress.Commands.add('check_URL_ResponseStatus', (args) => {
   cy.get(args)

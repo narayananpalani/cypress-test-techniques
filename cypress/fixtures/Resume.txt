@@ -1,0 +1,182 @@
+
+
+
+
+
+SNAPSHOT
+	Working as Senior Test Engineer since 4.3 Years with Zindigi Technologies Ltd. 
+	Have done the testing of various financial market products where the application required good knowledge of Capital Market and Money Market instruments.
+	Certified from National Stock Exchange with :-
+•	Financial Module 
+•	Mutual Funds Module
+•	Derivative Market
+	Have been monitoring the EOD batches, daily reports and morning checks in Production.
+	IELTS certified (International English Language Testing system)
+	Worked as Domain Specialist for a Stocks application project.
+	Worked on Quality Centre and used its key features test planning, test execution and report generations.
+	Knowledge on SQL commands/queries and executing SPUFI for mainframe.
+	Collaborating with users across Austin, San Francisco, Sweden and supporting them on a daily basis.
+	Worked with different types of Testing life cycles.
+	Expertise in functional testing, minor team management, Business analysis and requirement gathering and explaining those requirements to developers for coding or developing small projects whenever required in the Securities & Capital Markets Domain.
+	Worked as Domain Team Lead in minor project for 5 months.
+	Being self motivated, assertive and proactive are the qualities which I can offer.
+	Have an ability to manage derivative projects, ability to work within tight deadlines, a Team Player and having analytical capabilities
+	Deep knowledge and practical experience as a Regular Investor for around 3 years in investing in various Products like Equities, Fixed Income, and Derivatives etc in the Indian Stock Markets. 
+	Handled critical Production checkouts which required testing in real time environment. 
+	Performing a Mentor role for my project account in induction program for new joiners.
+	Worked in a Business Analyst’s team and have exposure to the overall activities controlled by BA.
+	Playing a multidimensional role in implementing the projects right from requirements gathering from stakeholders/users, making strategic blueprint and workflow, investigating its possibilities,  getting it coded by coders, testing it in debug mode, test cases preparation, checking memory leakage and finally delivering it to users for acceptance testing.
+
+AREAS OF EXPERTISE 
+                                                                      Securities& Capital Markets Domain
+	Good knowledge in stock market functionalities and in particular all the fields for static and market data involved in pricing structured products, Cost Basis method for Stocks.
+	Also, worked closely on Testing of Institutional Trading Websites.	
+	Had given Domain level presentations to the Project Team level on various topics of Capital Market Domain.	
+	Good experience in Equities.
+
+	               
+Quality Assurance/Testing
+	Good Experience in Functional, Regression testing, Integration Testing.
+	Worked on Spufi provided under Mainframe environment.
+	Use to give weekly walkthrough’s to the QA about the new features implemented in the current release.
+	Testing of Financial Trading Applications & Platforms.
+	Reviewing test scenarios and test cases prepared by the QA team.
+	Co-ordinating the pre-release testing effort.
+	Preparing weekly status reports & presentations to present to the Client and Users on weekly and monthly basis.
+
+
+
+
+
+
+
+
+
+
+ORGANISATIONAL EXPERIENCE
+
+
+ Projects Undertaken  in WIPRO
+                                                                               
+Fixed income module
+	
+	
+
+Project Description: The objective of this project is to provide better online experience to client for all Fixed Income products such as Corporate, Municipals, MBS, and Treasuries etc. This includes enhance search capability so that user can more effectively search for the exact product they are looking for from the large inventory which Schwab has. Schwab now offers Municipal New Issues with the help of JP Morgan. Schwab now also offers Retail Notes & Preferred Securities. With this project Schwab is now up to where its competitors are which includes Fidelity & E-Trade.
+Responsibilities/Contributions: 
+
+•	Involved in Requirement study, effort estimation, deciding assignment for team members.
+•	Prepared the ambiguity documents to clear all the queries for the business partners.
+•	I was also involved in preparing Test Plans and BRD doc’s.
+•	Reviewed the test cases written by the team.
+•	Participated in meetings with Developer to discuss about defects & clarification of defects.
+•	Sending daily status report to the Clients.
+•	Keeping track of any changes happening in the requirement & making sure they are documented & tested properly. This was a challenging task as requirement kept changing very frequently & it was difficult to keep all the test documents updated.
+Technologies Used: QC, Visual studio,TFS
+
+
+
+Cost Basis Legislation
+	
+	
+
+Project Description: The Emergency Economic Stabilization Act of 2008 includes a provision requiring brokers to expand information reporting to the IRS in connection with securities sales to include the adjusted cost basis of securities sold and whether the related gain or loss is long term or short term. Previously, Schwab provided the IRS and taxpayers with an information return (Form 1099-B) setting forth gross proceeds received in connection with the disposition of certain securities.  However, Schwab was not required to provide adjusted basis or holding period related gain/loss information. With this project Schwab started to provide Adjusted Cost Basis information to IRS & users. Schwab now also provides the capacity to select a particular lot while selling any security which were not there earlier in Schwab.com
+Responsibilities/Contributions: 
+
+•	My role was to study the Business Requirement Document & Software Requirement Specification and explain the requirement to the team.
+•	I was also involved in Test Planning which includes the sizing of project timelines.
+•	Was involved in preparing Test Scenarios.
+•	Reviewed the test cases written by the team.
+•	Participated in meetings with Developer to discuss about defects & clarification of defects.
+•	Sending daily status report to the Clients.
+•	Keeping track of any changes happening in the requirement & making sure they are documented & tested properly.
+•	Was involved in preparing production launch plan.
+Technologies Used: QC, Visual studio
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Client Web Platform Regression Testing
+	
+
+Project Description: Charles Schwab decided to rewrite the entire schwab.com in to .net code. The purpose was to implement any minor & major changes or enhancements into production in less time. Reducing the cost was also a factor. While rewriting the schwab.com in .net, major functionalities were kept the same as in old schwab.com. Navigation to various pages was changed and also GUI took a major shift. The objective of this project is to test entire schwab.com and make sure zero bug slippage into production.
+Responsibilities/Contributions: 
+•	To test the assigned applications of schwab.com in each maintenance release to make sure zero bug slippage into production.
+•	Conduct meetings with Functional team to know about every change made in a particular release and to test those changes during Merge Verification Testing.
+•	Bug logging, tracking & reporting.
+•	Sending the status of testing to lead on a daily basis.
+•	Follow up with onsite coordinator to know about the latest updates.
+•	To execute Auto scripts written by automation team in QTP and analyzing the results in case of failure.
+Technologies Used: QC, Visual studio,SPUFI
+
+Ericsson applications
+	
+	
+
+Project Description: Worked in Call control application of Ericsson Which uses computer supported telephony communications protocol.
+Responsibilities/Contributions:
+•	Worked with C++ in the Call control application as a bug fixing activity
+•	Fixed defect in the application using Analog, Digital and IP phones.
+•	Also involved in activities like build generation, patch loading etc.
+Technologies Used: 
+SVM, Client quest, C++
+
+
+NOTABLE ACHIEVEMENTS
+
+•	Awarded “Thanks a Zillion” by Senior Manager with Accolades for consecutive quarters for excellent contributions towards the delivery work.
+•	Awarded with “Feather in my cap” award by Management for organizing quality work efforts and getting appreciation from client 
+
+TRAINING UNDERTAKEN
+
+Trainings:  
+Training NAME 	                                                                       Start DATE                END DATE                  
+VCS-Time Management	07/18/2011	07/18/2011
+Securities 201	08/23/2010	09/04/2010
+Accent Neutralization	08/21/2008	08/22/2008
+Written Communication	07/29/2008	07/29/2008
+Oral Communication	07/28/2008	07/28/2008
+Software Configuration Management	02/21/2008	02/21/2008
+Software Reviews and Testing	02/11/2008	02/11/2008
+Veloci-Q 101	01/21/2008	01/21/2008
+PRPBatch24thsep sys prog windows wase	12/04/2007	12/13/2007
+Windows Internals for 24Sept Wind Wase	11/20/2007	11/26/2007
+Microsfot Test Manager	15/01/2012	15/01/2012
+
+
+ACADEMIC CREDENTIALS
+                          
+Master of S.ce (software engineering)-Jan2011	  First Class
+BITS(Pilani)
+
+Bachelor of Computer Application – March 2007	                                                                        First Class		
+G.N.D.U University, Amritsar 
+ 
+DMS- May 2003					                                                        First Class		
+CBSE, Jalandhar.
+
+SSE– May 2001		
+Seth hukam chand S.D public school School, GSEB, Jalandhar                                          First Class	
+
+
+PERSONAL DOSSIER
+
+Date of birth            		:        XXXX 
+Marital Status          		:       Single
+Nationality                		:       Indian
+Languages known    		:       English, Hindi
+		 
+							
+
+								XXXXXXXXXXXX
