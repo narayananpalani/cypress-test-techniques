@@ -2,12 +2,14 @@
 Complete videos,exercises,quiz and assignments: www.udemy.com/course/cypressio
 
 # Credits to:
-Samuel Anthony Custer for cypress-axe
-Vinayak Titti for cypress-boilerplate
-abramenal for cypress-file-upload
-Ben Kucera for cypress-plugin-tab
-Gleb Bahmutov for cypress-xpath
-Michael Herman for cypress-visual-regression
+Samuel Anthony Custer for cypress-axe,
+Vinayak Titti for cypress-boilerplate,
+abramenal for cypress-file-upload,
+Ben Kucera for cypress-plugin-tab,
+Gleb Bahmutov for cypress-xpath,
+Michael Herman for cypress-visual-regression,
+Jack Cross for cypress-image-snapshot,
+Lukasz Gandecki for cypress-cucumber-preprocessor.
 
 # Dependencies:
 1. npm install
