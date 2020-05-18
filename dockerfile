@@ -17,24 +17,7 @@ RUN npm install
 RUN npm link
 RUN npm link cypress-cucumber-preprocessor
 RUN npm install through
-RUN npm run test:mochawesomereport
+RUN npm run sanitytest:mochawesomereport
 #RUN $(npm bin)/cypress verify
-RUN $(npm bin)/cypress run --browser firefox
-RUN $(npm bin)/cypress run --browser chrome
- 
- 
-#----------------------------Config Two--------------------------
- 
-# Chrome 79 & Firefox 71
-FROM cypress/browsers:node12.14.0-chrome79-ff71
-RUN mkdir /cyTests
-WORKDIR /cyTests
-COPY . /cyTests
-RUN npm install
-RUN npm link
-RUN npm link cypress-cucumber-preprocessor
-RUN npm install through
-RUN npm run test:mochawesomereport
-#RUN $(npm bin)/cypress verify
-RUN $(npm bin)/cypress run --browser firefox
-RUN $(npm bin)/cypress run --browser chrome
+# RUN $(npm bin)/cypress run --browser firefox
+# RUN $(npm bin)/cypress run --browser chrome
