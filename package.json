@@ -8,7 +8,7 @@
     "start": "serve --listen ${PORT:-8080}",
     "types": "tsc --noEmit",
     "lint": "eslint --fix cypress/**/*.js app/assets/js/scripts.js",
-    "test": "npx cypress run --record --key ab295972-7dbd-4ff6-b1ff-4ddb934c10d0 -s 'cypress/integration/features/SampleFunctionalTest.feature' -r mochawesome --reporter-options 'reportDir=cypress/report/mochawesome-report,overwrite=false,html=true,json=true,timestamp=mmddyyyy_HHMMss'",
+    "test": "npx cypress run --record --key ab295972-7dbd-4ff6-b1ff-4ddb934c10d0 -s 'cypress/integration/features/*.feature' -r mochawesome --reporter-options 'reportDir=cypress/report/mochawesome-report,overwrite=false,html=true,json=true,timestamp=mmddyyyy_HHMMss'",
     "install": "npm install mocha mochawesome mochawesome-merge mochawesome-report-generator",
     "pretest": "npm run lint && npm run types",
     "stop-only": "stop-only -f cypress/integration",
