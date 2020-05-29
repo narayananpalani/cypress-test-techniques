@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "setup": "npm install --no-optional --color-always && npm link && npm link cypress-cucumber-preprocessor && npm install through",
     "build": "npm run lint && npm run stop-only",
     "start": "serve --listen ${PORT:-8080}",
     "types": "tsc --noEmit",

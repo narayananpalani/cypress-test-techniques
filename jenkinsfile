@@ -1,0 +1,37 @@
+pipeline {
+    agent any
+
+    tools {nodejs "node"}
+
+    environment {
+        CHROME_BIN = '/bin/google-chrome'
+    }
+
+    stages {
+        stage('Dependencies') {
+            steps {
+                sh 'npm run setup'
+            }
+        }
+        stage('Build') {
+            steps {
+                sh 'npm run build'
+            }
+        }
+        stage('Unit Tests') {
+            steps {
+                sh 'npm run test'
+            }
+        }
+        stage('e2e Tests') {
+            steps {
+                sh 'test:mochawesomereport'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
+    }
+}
