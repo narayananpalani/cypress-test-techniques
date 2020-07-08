@@ -2,14 +2,14 @@
 Complete videos,exercises,quiz and assignments: www.udemy.com/course/cypressio
 
 # Credits to:
-Samuel Anthony Custer for cypress-axe,
-Vinayak Titti for cypress-boilerplate,
-abramenal for cypress-file-upload,
-Ben Kucera for cypress-plugin-tab,
-Gleb Bahmutov for cypress-xpath,
-Michael Herman for cypress-visual-regression,
-Jack Cross for cypress-image-snapshot,
-Lukasz Gandecki for cypress-cucumber-preprocessor.
+1. Samuel Anthony Custer for cypress-axe,
+2. Vinayak Titti for cypress-boilerplate,
+3. abramenal for cypress-file-upload,
+4. Ben Kucera for cypress-plugin-tab,
+5. Gleb Bahmutov for cypress-xpath,
+6. Michael Herman for cypress-visual-regression,
+7. Jack Cross for cypress-image-snapshot,
+8. Lukasz Gandecki for cypress-cucumber-preprocessor.
 
 # Dependencies:
 1. npm install
@@ -44,6 +44,12 @@ Lukasz Gandecki for cypress-cucumber-preprocessor.
 2. Allure reports: 
     a. npm run test:allurereport
     b. npm run generatereport
+
+# BrowserStack Integration Steps
+1. Installation in repository: npm install -g browserstack-cypress-cli
+2. Create Json file of browserstack through: browserstack-cypress init
+3. Update the browserstack.json using standard configurations. (Example:https://www.browserstack.com/docs/automate/cypress)   
+4. Run the tests in browserstack: browserstack-cypress run 
 
 
 
