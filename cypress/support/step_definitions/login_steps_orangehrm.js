@@ -1,18 +1,19 @@
 import { loginOrangehrmPage } from '../../pageobjects/LoginOrangehrm_PageObjects'
+
 Given('I open OrangeHRM homepage', () => {
-      loginOrangehrmPage.launchPage();
-});
+  loginOrangehrmPage.launchPage()
+})
 
 //I perform accessibility audit using axe
 Given('I perform accessibility audit using axe', () => {
-    loginOrangehrmPage.a11yAuditAxe();
-});
+  loginOrangehrmPage.a11yAuditAxe()
+})
 //      When I SignIn as user:
 When('I SignIn as user', () => {
-    loginOrangehrmPage.signIn();
-});
+  loginOrangehrmPage.signIn()
+})
 
 //Then the user name should be displayed:
 Then('the user name should be displayed', () => {
-    loginOrangehrmPage.verifyAccountNameDisplayed();
-});
+  loginOrangehrmPage.verifyAccountNameDisplayed()
+})

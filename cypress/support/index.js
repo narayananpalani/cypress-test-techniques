@@ -21,6 +21,7 @@ import './commands'
 require('cypress-xpath')
 require('cypress-plugin-tab')
 import 'cypress-axe'
+
 Cypress.on('uncaught:exception', () => {
 
   return false
