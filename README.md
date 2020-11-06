@@ -1,5 +1,6 @@
 # Cypress-Test-Techniques for functional,visual regression,accessibility and compatibility tests with Cucumber BDD and AWS Amplify Console - CI/CD Pipeline
-Complete videos,exercises,quiz and assignments: https://www.udemy.com/course/cypressio/?couponCode=LEARNSEPTEMBER
+Complete videos,exercises,quiz and assignments: https://engineers-hub.teachable.com/p/cypressio
+Book: https://www.routledge.com/Automated-Software-Testing-with-Cypress/Palani/p/book/9780367699543
 
 # Credits to:
 1. Samuel Anthony Custer for cypress-axe,
