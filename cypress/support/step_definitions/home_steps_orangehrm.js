@@ -158,3 +158,8 @@ When ('I press enter on dropdown of jobtitle to choose sales manager', () => {
 When ('I press enter on search button of pim tab', () => {
    homeOrangehrmPage.pressSearchusingKeyboard();
 });
+
+//And I click on nationalities sub tab of admin page
+When('I click on nationalities sub tab of admin page', () => {
+   homeOrangehrmPage.clickNationalitiesTab();
+});

@@ -16,6 +16,7 @@ const jobTitleDropdown_pim= "//*[@id='empsearch_job_title']";
 const searchBtn_pim = "//*[@id='searchBtn']";
 const searchResults= "//*[@id='resultTable']";
 const supervisorPIMtab=  "//*[@id='empsearch_supervisor_name']";
+const nationalities_tabselector_adminpage= '#menu_admin_nationality';
 
 export const homeOrangehrmPage = {
     checkAdminTab() {
@@ -175,6 +176,16 @@ export const homeOrangehrmPage = {
    pressSearchusingKeyboard(){
       cy.xpath(searchBtn_pim)
         .type('{enter}');
+   },
+
+   checkNationalitiesTab() {
+      cy.get(nationalities_tabselector_adminpage)
+        .invoke('show').should('be.visible');
+    },
+  clickNationalitiesTab(){
+      cy.get(nationalities_tabselector_adminpage)
+        .invoke('show')
+        .click({ visible: true, force: true });
    }
 };
 
