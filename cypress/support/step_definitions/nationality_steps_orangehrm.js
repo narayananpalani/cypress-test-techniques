@@ -14,3 +14,8 @@ Then('Add button is shown on the page', () => {
 Then('Delete button is shown on the page', () => {
     nationalitiesOrangehrmPage.checkDeleteButton();
 });
+
+//And I double click on Add button
+Then('I double click on Add button', () => {
+    nationalitiesOrangehrmPage.doubleClickAddButton();
+});

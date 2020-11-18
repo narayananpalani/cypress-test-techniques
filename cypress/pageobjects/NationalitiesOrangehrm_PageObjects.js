@@ -23,6 +23,12 @@ export const nationalitiesOrangehrmPage = {
           .invoke('show').should('be.visible')
           .click();
     },
+
+    doubleClickAddButton(){
+        cy.get(add_selector_nationalitiespage)
+          .invoke('show').should('be.visible')
+          .dblclick();
+    },
     
     clickDeleteButton(){
         cy.get(delete_selector_nationalitiespage)

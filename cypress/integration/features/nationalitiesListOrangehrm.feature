@@ -8,3 +8,4 @@ Feature: List Nationalities on Admin page
       Then Nationality list should be displayed
       And Add button is shown on the page
       And Delete button is shown on the page
+      And I double click on Add button
