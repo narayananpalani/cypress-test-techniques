@@ -9,9 +9,8 @@
   "chromeWebSecurity": false,
   "watchForFileChanges": false,
   "trashAssetsBeforeRuns": true,
-   "reporter": "mochawesome",
-    "reporterOptions": {
-      "overwrite": false
-    }
-  
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "overwrite": true
+  }
 }
