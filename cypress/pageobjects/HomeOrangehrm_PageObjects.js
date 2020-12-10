@@ -17,6 +17,7 @@ const searchBtn_pim = "//*[@id='searchBtn']";
 const searchResults = "//*[@id='resultTable']";
 const supervisorPIMtab = "//*[@id='empsearch_supervisor_name']";
 const nationalities_tabselector_adminpage = '#menu_admin_nationality';
+const configuration_tabselector_adminpage = '#menu_admin_Configuration';
 
 export const homeOrangehrmPage = {
    checkAdminTab() {
@@ -191,6 +192,11 @@ export const homeOrangehrmPage = {
       cy.get(nationalities_tabselector_adminpage)
          .invoke('show')
          .dblclick({ visible: true, force: true });
+   },
+   rightClickConfigurationTab() {
+      cy.get(configuration_tabselector_adminpage)
+         .invoke('show')
+         .rightclick({ visible: true, force: true });
    }
 };
 

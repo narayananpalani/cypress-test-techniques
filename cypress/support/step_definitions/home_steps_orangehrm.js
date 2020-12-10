@@ -164,3 +164,8 @@ When('I click on nationalities sub tab of admin page', () => {
    //homeOrangehrmPage.clickNationalitiesTab();
    homeOrangehrmPage.doubleClickNationalitiesTab();
 });
+
+//And I right click on configuration sub tab of admin page
+When('I right click on configuration sub tab of admin page', () => {
+   homeOrangehrmPage.rightClickConfigurationTab();
+});

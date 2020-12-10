@@ -1,4 +1,12 @@
 import { nationalitiesOrangehrmPage } from '../../pageobjects/NationalitiesOrangehrm_PageObjects'
+//And I click on nationality checkbox for "Colombian" value
+When('I click on nationality checkbox for Colombian value', () => {
+    nationalitiesOrangehrmPage.selectNationality('Colombian');
+});
+//And I uncheck the Colombian checkbox
+When('I uncheck the Colombian checkbox', () => {
+    nationalitiesOrangehrmPage.uncheckNationality('Colombian');
+})
 
 //Then Nationality list should be displayed
 Then('Nationality list should be displayed', () => {
@@ -19,3 +27,13 @@ Then('Delete button is shown on the page', () => {
 Then('I double click on Add button', () => {
     nationalitiesOrangehrmPage.doubleClickAddButton();
 });
+
+//The Colombian checkbox is selected
+Then('The Colombian checkbox is selected', () => {
+    nationalitiesOrangehrmPage.verifyCheckedNationalities('Colombian');
+});
+
+//The Colombian checkbox is not selected
+Then('The Colombian checkbox is not selected', () => {
+    nationalitiesOrangehrmPage.verifyUncheckedNationality('Colombian');
+})
