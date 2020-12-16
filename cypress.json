@@ -1,5 +1,5 @@
 {
-  "projectId": "j5qpgn",
+  "projectId": "j8cs4d",
   "baseUrl": "https://opensource-demo.orangehrmlive.com",
   "waitForAnimations": true,
   "animationDistanceThreshold": 50,
@@ -9,9 +9,8 @@
   "chromeWebSecurity": false,
   "watchForFileChanges": false,
   "trashAssetsBeforeRuns": true,
-   "reporter": "mochawesome",
-    "reporterOptions": {
-      "overwrite": false
-    }
-  
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "overwrite": true
+  }
 }

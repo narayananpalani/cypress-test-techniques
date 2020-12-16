@@ -1,4 +1,5 @@
 import { loginOrangehrmPage } from '../../pageobjects/LoginOrangehrm_PageObjects'
+import { Given, When, Then } from 'cypress-cucumber-preprocessor/steps'
 
 Given('I open OrangeHRM homepage', () => {
   loginOrangehrmPage.launchPage()

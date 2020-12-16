@@ -1,4 +1,5 @@
 import { homeOrangehrmPage } from '../../pageobjects/HomeOrangehrm_PageObjects'
+import { When, Then } from 'cypress-cucumber-preprocessor/steps'
 
 //step definition for the feature file's line: And the Admin tab should be displayed
 Then('the Admin tab should be displayed', () => {
@@ -87,7 +88,6 @@ When('I perform move actions on dashboard graph', () => {
   homeOrangehrmPage.mousActionsonDashboardGraph()
 })
 
-
 //Then text insights displayed below dashboard successfully
 Then('text insights displayed below dashboard successfully', () => {
   homeOrangehrmPage.textInsightsBelowGraph()
@@ -108,12 +108,10 @@ When('I see the page in iPad2 version', () => {
   homeOrangehrmPage.viewPortipad2()
 })
 
-
 //And I select sales manager in the employees list
 When('I select sales manager in the employees list', () => {
   homeOrangehrmPage.selectSalesmgrEmployee()
 })
-
 
 //Then sales manager should be selected successfully
 Then('sales manager should be selected successfully', () => {

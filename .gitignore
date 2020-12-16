@@ -17,4 +17,5 @@ allure-results/
 mochawesome-report/
 cypress/videos
 cypress/screenshots
+cucumber-report/
 

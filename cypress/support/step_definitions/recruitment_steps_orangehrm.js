@@ -1,4 +1,5 @@
 import { recOrangehrmPage } from '../../pageobjects/RecruitmentOrangehrm_PageObjects'
+import { When, Then } from 'cypress-cucumber-preprocessor/steps'
 
 When('I click on Recruitment tab of home page', () => {
   recOrangehrmPage.clickRecTab()
@@ -15,5 +16,3 @@ Then('I uploaded the resume successfully', () => {
 Then('I uploaded the resume forcefully', () => {
   recOrangehrmPage.uploadResumeForce()
 })
-
-

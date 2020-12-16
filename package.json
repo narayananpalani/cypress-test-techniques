@@ -9,7 +9,7 @@
     "start": "serve --listen ${PORT:-8080}",
     "types": "tsc --noEmit",
     "lint": "eslint --fix cypress/**/*.js app/assets/js/scripts.js",
-    "test": "npx cypress run --record --key ab295972-7dbd-4ff6-b1ff-4ddb934c10d0 -s 'cypress/integration/features/*.feature' -r mochawesome --reporter-options 'reportDir=cypress/report/mochawesome-report,overwrite=false,html=true,json=true,timestamp=mmddyyyy_HHMMss'",
+    "test": "npx cypress run --record --key 72740ad2-0964-4da1-9bb5-634d332c269d -s 'cypress/integration/features/*.feature' -r mochawesome --reporter-options 'reportDir=cypress/report/mochawesome-report,overwrite=false,html=true,json=true,timestamp=mmddyyyy_HHMMss'",
     "install": "npm install mocha mochawesome mochawesome-merge mochawesome-report-generator",
     "pretest": "npm run lint && npm run types",
     "stop-only": "stop-only -f cypress/integration",
@@ -19,17 +19,18 @@
     "test:allurereport": "cypress run -b chrome -r mocha-allure-reporter -s cypress/integration/features/*.feature",
     "generatereport": "allure generate allure-results --clean -o allure-report && allure open allure-report",
     "test:visual-base": "cypress run -b chrome --env updateSnapshots=true  --spec cypress/integration/features/*VisualTest.feature",
-    "test:visual-actual": "cypress run -b chrome --env failOnSnapshotDiff=false --reporter cypress-image-snapshot/reporter --spec cypress/integration/features/*VisualTest.feature"
+    "test:visual-actual": "cypress run -b chrome --env failOnSnapshotDiff=false --reporter cypress-image-snapshot/reporter --spec cypress/integration/features/*VisualTest.feature",
+    "generatecucumberreport": "node multiple-cucumber-html-reporter.js"
   },
   "author": "Narayanan Palani",
   "license": "ISC",
   "dependencies": {
-    "mem": "6.1.0",
+    "mem": "6.0.1",
     "minimist": "1.2.5",
-    "mochawesome-report-generator": "4.1.0",
+    "mochawesome-report-generator": "^4.1.0",
     "npm-run-all": "4.1.2",
     "serve": "11.3.2",
-    "through": "2.3.8"
+    "through": "^2.3.8"
   },
   "devDependencies": {
     "@bahmutov/print-env": "1.2.0",
@@ -37,25 +38,27 @@
     "@typescript-eslint/parser": "2.24.0",
     "allure-commandline": "2.0.0",
     "colon-names": "1.0.0",
-    "cypress": "4.11.0",
+    "cucumber-html-reporter": "^5.2.0",
+    "cypress": "6.1.0",
     "cypress-axe": "0.8.1",
-    "cypress-cucumber-preprocessor": "1.11.0",
+    "cypress-cucumber-preprocessor": "4.0.0",
     "cypress-file-upload": "4.0.6",
     "cypress-image-snapshot": "3.1.1",
     "cypress-plugin-retries": "1.2.0",
     "cypress-plugin-tab": "1.0.5",
     "cypress-visual-regression": "1.4.0",
     "cypress-xpath": "1.3.0",
-    "eslint": "5.16.0",
+    "eslint": "^5.16.0",
     "eslint-plugin-cypress": "2.8.1",
     "eslint-plugin-cypress-dev": "2.1.0",
     "eslint-plugin-mocha": "5.3.0",
     "eslint-plugin-vue": "6.2.2",
-    "mocha": "5.2.0",
+    "mocha": "^5.2.0",
     "mocha-allure-reporter": "1.4.0",
     "mocha-gherkin": "0.2.0",
-    "mochawesome": "6.1.1",
-    "mochawesome-merge": "2.1.0",
+    "mochawesome": "^6.2.1",
+    "mochawesome-merge": "^2.1.0",
+    "multiple-cucumber-html-reporter": "^1.18.0",
     "start-server-and-test": "1.10.6",
     "stop-build": "1.1.0",
     "stop-only": "3.1.0",
@@ -66,6 +69,14 @@
     "hooks": {
       "pre-commit": "npm run warn-only && npm run lint:yaml",
       "pre-push": "npm run stop-only && npm run lint:yaml"
+    }
+  },
+  "cypress-cucumber-preprocessor": {
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cucumber-report/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ""
     }
   }
 }
