@@ -18,7 +18,9 @@
         "project_name": "cypress-test-techniques",
         "build_name": "silver-1059",
         "parallels": "5",
-        "specs": ["./cypress/integration/features/*.*"],
+        "specs": [
+            "./cypress/integration/features/*.*"
+        ],
         "npm_dependencies": {
             "mem": "^6.1.0",
             "minimist": "^1.2.5",
@@ -30,9 +32,9 @@
             "@typescript-eslint/parser": "2.24.0",
             "allure-commandline": "2.0.0",
             "colon-names": "1.0.0",
-            "cypress": "^4.4.1",
+            "cypress": "6.1.0",
             "cypress-axe": "^0.8.1",
-            "cypress-cucumber-preprocessor": "1.11.0",
+            "cypress-cucumber-preprocessor": "4.0.0",
             "cypress-file-upload": "^4.0.6",
             "cypress-image-snapshot": "3.1.1",
             "cypress-plugin-retries": "1.2.0",
@@ -53,8 +55,11 @@
             "stop-build": "1.1.0",
             "stop-only": "3.1.0",
             "typescript": "3.7.4",
-            "yaml-lint": "1.2.4"  
-        }      
+            "yaml-lint": "1.2.4",
+            "multiple-cucumber-html-reporter": "^1.18.0",
+            "nodemailer": "6.4.17",
+            "browserstack-cypress-cli": "^1.6.0"
+        }
     },
     "connection_settings": {
         "local": false,

@@ -20,7 +20,8 @@
     "generatereport": "allure generate allure-results --clean -o allure-report && allure open allure-report",
     "test:visual-base": "cypress run -b chrome --env updateSnapshots=true  --spec cypress/integration/features/*VisualTest.feature",
     "test:visual-actual": "cypress run -b chrome --env failOnSnapshotDiff=false --reporter cypress-image-snapshot/reporter --spec cypress/integration/features/*VisualTest.feature",
-    "generatecucumberreport": "node multiple-cucumber-html-reporter.js"
+    "generatecucumberreport": "node multiple-cucumber-html-reporter.js",
+    "sendEmailNotification": "node send-email.js"
   },
   "author": "Narayanan Palani",
   "license": "ISC",
@@ -37,6 +38,7 @@
     "@typescript-eslint/eslint-plugin": "2.24.0",
     "@typescript-eslint/parser": "2.24.0",
     "allure-commandline": "2.0.0",
+    "browserstack-cypress-cli": "^1.6.0",
     "colon-names": "1.0.0",
     "cucumber-html-reporter": "^5.2.0",
     "cypress": "6.1.0",
@@ -59,6 +61,7 @@
     "mochawesome": "^6.2.1",
     "mochawesome-merge": "^2.1.0",
     "multiple-cucumber-html-reporter": "^1.18.0",
+    "nodemailer": "^6.4.17",
     "start-server-and-test": "1.10.6",
     "stop-build": "1.1.0",
     "stop-only": "3.1.0",

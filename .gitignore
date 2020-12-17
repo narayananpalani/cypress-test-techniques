@@ -19,3 +19,4 @@ cypress/videos
 cypress/screenshots
 cucumber-report/
 
+tests.zip
