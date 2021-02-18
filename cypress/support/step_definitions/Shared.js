@@ -93,3 +93,11 @@ Then('I log {string}', (string) => {
 Then('I check all URL response status should be 200', function () {
   cy.checkURLResponseStatus()
 })
+
+Then('I should see web audit results', function () {
+  cy.lighthouse();
+})
+ 
+Then('I should see web accessibility audit results', function () {
+  cy.pa11y();
+})
