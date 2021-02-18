@@ -11,6 +11,7 @@
 // This function is called when a project is opened or re-opened (e.g. due to
 // the project's config changing)
 const cucumber = require("cypress-cucumber-preprocessor").default;
+const { lighthouse, pa11y, prepareAudit } = require("cypress-audit");
 const getCompareSnapshotsPlugin = require("cypress-visual-regression/dist/plugin");
 const {
   addMatchImageSnapshotPlugin,
@@ -29,4 +30,16 @@ module.exports = (on, config) => {
 
   //const file = config.env.configFile;
   //return getCongByFile(file);
+  on("before:browser:launch", (browser = {}, launchOptions) => {
+    prepareAudit(launchOptions);
+  });
+
+  on("task", {
+    lighthouse: lighthouse((lighthouseReport) => {
+      console.log(lighthouseReport); // raw lighthouse reports
+    }),
+    pa11y: pa11y((pa11yReport) => {
+      console.log(pa11yReport); // raw pa11y reports
+    }),
+  });
 };
