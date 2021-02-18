@@ -12,6 +12,10 @@ Book: https://www.routledge.com/Automated-Software-Testing-with-Cypress/Palani/p
 7. Jack Cross for cypress-image-snapshot,
 8. Lukasz Gandecki for cypress-cucumber-preprocessor.
 
+# Tools required to install prior to use this code:
+1. Node version 12 or above
+2. Visual Studio Code or IntelliJ or WebstormIDE or any valid IDE
+
 # Dependencies:
 1. npm install
 2. npm link
