@@ -2,12 +2,13 @@
 :octocat: An open-source, fully built Cypress Framework in page object model with visual regression, lighthouse code audit, accessibility tests, mobile view port compatibility tests, browserstack, jenkins,docker configuration :evergreen_tree:
 
 # Video Guide
-[![CypressIOFramework](https://github.com/cypress-test-techniques/lessons/blob/master/lessons/CypressIOtestframework.gif?raw=true)](https://engineers-hub.teachable.com/p/cypressio)
+[![CypressIOFramework](https://github.com/narayananpalani/cypress-test-techniques/blob/master/lessons/CypressIOtestframework.gif?raw=true)](https://engineers-hub.teachable.com/p/cypressio)
+
 :rocket: Global reach of CypressIO sessions through [Teachable](https://engineers-hub.teachable.com/). 
 [![video showing international reach of udemy courses](https://github.com/narayananpalani/narayananpalani/blob/master/images/globalreach.gif?raw=true)](https://engineers-hub.teachable.com/)
 
 # Book
-[![CypressIOBook](https://github.com/cypress-test-techniques/lessons/blob/master/lessons/9780367699543.jpg?raw=true)](https://www.routledge.com/Automated-Software-Testing-with-Cypress/Palani/p/book/9780367699543)
+[![CypressIOBook](https://github.com/narayananpalani/cypress-test-techniques/blob/master/lessons/9780367699543.jpg?raw=true)](https://www.routledge.com/Automated-Software-Testing-with-Cypress/Palani/p/book/9780367699543)
 
 ## CypressIO CheatSheet
 [Latest CypressIO CheatSheet](https://cheatography.com/narayanan-palani/cheat-sheets/cypressio/)
