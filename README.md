@@ -64,7 +64,8 @@ It takes just 5 minutes to setup cypress framework 🚀
 3. Update the browserstack.json using standard configurations. (Example:https://www.browserstack.com/docs/automate/cypress)   
 4. Run the tests in browserstack: browserstack-cypress run 
 
-
+# How Tests Are Executed?-Watch from Youtube Playlist
+[![Youtube Playlist](https://images.unsplash.com/photo-1567443024551-f3e3cc2be870?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80?raw=true)](https://www.youtube.com/watch?v=H34ABc6BHhs&list=PLXW5SOJAYvfe0aZHUIaAVhZlOfI0wP0Xs)
 
 ## Credits
 1. Samuel Anthony Custer for cypress-axe,
