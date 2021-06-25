@@ -1,5 +1,13 @@
 import { When, Then } from 'cypress-cucumber-preprocessor/steps'
 
+const lighthousemetrics = {
+  performance: 95,
+  accessibility: 100,
+  "best-practices": 95,
+  seo: 85,
+  pwa: 100,
+};
+
 // capture snapshot
 Then('I capture snapshot and compare {string}', (string) => {
   cy.matchImageSnapshot(string)
@@ -95,7 +103,7 @@ Then('I check all URL response status should be 200', function () {
 })
 
 Then('I should see web audit results', function () {
-  cy.lighthouse();
+  cy.lighthouse(lighthousemetrics);
 })
  
 Then('I should see web accessibility audit results', function () {
