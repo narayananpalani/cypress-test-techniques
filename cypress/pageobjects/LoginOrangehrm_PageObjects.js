@@ -3,6 +3,7 @@ const inputUserName = '//input[@id=\'txtUsername\']'
 const inputUserPassword = '#txtPassword'
 const loginButtonSubmit = '//*[@id=\'btnLogin\']'
 const label_Welcome = '//*[@id=\'welcome\']'
+const pageTitle_Home = '//*[@title=\'OrangeHRM\']'
 
 export const loginOrangehrmPage = {
   launchPage () {
@@ -40,6 +41,10 @@ export const loginOrangehrmPage = {
             .should('contain', `Welcome ${data.username}`)
     })
 
+  },
+  verifyPageTitle () {
+    cy.xpath(pageTitle_Home)
+            .should('exist')
   },
   a11yAuditAxe () {
     cy.checkA11y(null, null, terminalLog)
