@@ -2,6 +2,7 @@
   "projectId": "j8cs4d",
   "baseUrl": "https://opensource-demo.orangehrmlive.com",
   "waitForAnimations": true,
+  "video":true,
   "animationDistanceThreshold": 50,
   "pageLoadTimeout": 120000,
   "defaultCommandTimeout": 60000,
