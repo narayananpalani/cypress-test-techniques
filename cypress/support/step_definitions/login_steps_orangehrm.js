@@ -18,3 +18,7 @@ When('I SignIn as user', () => {
 Then('the user name should be displayed', () => {
   loginOrangehrmPage.verifyAccountNameDisplayed()
 })
+
+Then('the page title should exist on home page', () => {
+  loginOrangehrmPage.verifyPageTitle()
+})
