@@ -4,6 +4,7 @@ const inputUserPassword = '#txtPassword'
 const loginButtonSubmit = '//*[@id=\'btnLogin\']'
 const label_Welcome = '//*[@id=\'welcome\']'
 const pageTitle_Home = '//*[@title=\'OrangeHRM\']'
+const loginPageLang = '//*[@lang=\'en\']'
 
 export const loginOrangehrmPage = {
   launchPage () {
@@ -44,6 +45,10 @@ export const loginOrangehrmPage = {
   },
   verifyPageTitle () {
     cy.xpath(pageTitle_Home)
+            .should('exist')
+  },
+  verifyPageLanguage () {
+    cy.xpath(loginPageLang)
             .should('exist')
   },
   a11yAuditAxe () {
