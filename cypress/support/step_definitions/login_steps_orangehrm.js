@@ -22,3 +22,7 @@ Then('the user name should be displayed', () => {
 Then('the page title should exist on home page', () => {
   loginOrangehrmPage.verifyPageTitle()
 })
+
+Then('the language of the page should exist on login page', () => {
+  loginOrangehrmPage.verifyPageLanguage()
+})
