@@ -80,6 +80,12 @@ It takes just 5 minutes to setup cypress framework 🚀
 ## Watch Latest Meetup Session
 [Latest CypressIO Meetup](https://www.youtube.com/watch?v=b8y8hTTeXTw&t=2s)
 
+## International Webinar - Book Slots
+[Scalable and Reliable Cross Browser Testing With Cypress Framework. 🚀](https://bit.ly/3qKyWa7)
+
+## Download Slides from Slideshare
+[Most Famous Cypress Automated Tests for Developers and Testers](https://www.slideshare.net/narayananpalani/most-famous-cypress-automation-tests-for-developers-and-testers)
+
 :tada: Learn ISTQB Test Automation Engineering along with CypressIO:
 [![ISTQB Advanced Test Automation Engineering Training](https://github.com/narayananpalani/narayananpalani/blob/master/images/ISTQBAdvancedTestAutomationEngineering.png?raw=true)](https://engineers-hub.teachable.com/p/istqb-advanced-level-test-automation-engineer-professional-training-with-q-a)
 
