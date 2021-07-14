@@ -5,6 +5,8 @@ const loginButtonSubmit = '//*[@id=\'btnLogin\']'
 const label_Welcome = '//*[@id=\'welcome\']'
 const pageTitle_Home = '//*[@title=\'OrangeHRM\']'
 const loginPageLang = '//*[@lang=\'en\']'
+const loginFooterLink = '//*[@href="http://www.orangehrm.com"]'
+const loginFooterLinkText ='//*[contains(text(),"OrangeHRM, Inc")]'
 
 export const loginOrangehrmPage = {
   launchPage () {
@@ -54,5 +56,13 @@ export const loginOrangehrmPage = {
   a11yAuditAxe () {
     cy.checkA11y(null, null, terminalLog)
   },
+  verifyPageFooterLink () {
+    cy.xpath(loginFooterLink)
+            .should('exist')
+  },
+  verifyFooterLinkTextCheck () {
+    cy.xpath(loginFooterLinkText)
+            .should('exist')
+  }
 
 }

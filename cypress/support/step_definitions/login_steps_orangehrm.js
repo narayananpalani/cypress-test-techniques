@@ -26,3 +26,12 @@ Then('the page title should exist on home page', () => {
 Then('the language of the page should exist on login page', () => {
   loginOrangehrmPage.verifyPageLanguage()
 })
+
+Then('the link should be provided with url as per WCAG guidelines', () => {
+  loginOrangehrmPage.verifyPageFooterLink()
+})
+
+Then('the link should be provided with text as per WCAG guidelines', () => {
+  loginOrangehrmPage.verifyFooterLinkTextCheck()
+})
+
