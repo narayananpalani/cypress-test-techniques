@@ -54,7 +54,27 @@ export const loginOrangehrmPage = {
             .should('exist')
   },
   a11yAuditAxe () {
+    cy.injectAxe()
     cy.checkA11y(null, null, terminalLog)
+  },
+  a11yAuditAxeSkipFail () {
+    cy.injectAxe()
+    cy.checkA11y(null, null, terminalLog,{skipFailures: true})
+  },
+  a11yAuditAxeCritical () {
+    cy.injectAxe()
+    cy.checkA11y(null,{
+      includedImpacts: ['critical']
+    }, terminalLog)
+  },
+  a11yAuditAxeCheckTags () {
+    cy.injectAxe()
+    cy.checkA11y(null,{
+      runOnly: {
+        type: 'tag',
+        values: ['wcag2aa', 'wcag2a', 'section508']
+      }
+    }, terminalLog)
   },
   verifyPageFooterLink () {
     cy.xpath(loginFooterLink)

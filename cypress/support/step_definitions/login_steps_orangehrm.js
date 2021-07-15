@@ -9,6 +9,19 @@ Given('I open OrangeHRM homepage', () => {
 Given('I perform accessibility audit using axe', () => {
   loginOrangehrmPage.a11yAuditAxe()
 })
+
+Given('I perform accessibility audit using axe by skipping failures', () => {
+  loginOrangehrmPage.a11yAuditAxeSkipFail()
+})
+
+Given('I perform accessibility audit using axe to check critical violations', () => {
+  loginOrangehrmPage.a11yAuditAxeCritical()
+})
+
+Given('I perform accessibility audit using axe to check tags as per wcag', () => {
+  loginOrangehrmPage.a11yAuditAxeCheckTags()
+})
+
 //      When I SignIn as user:
 When('I SignIn as user', () => {
   loginOrangehrmPage.signIn()
