@@ -1,0 +1,37 @@
+{
+   "lambdatest_auth": {
+      "username": "narayananp24",
+      "access_key": "fDLinnexaoPrR8l0UjAZiBA5phW1TOlGliOMr0rlsPVNJu4vrM"
+   },
+   "browsers": [
+      {
+         "browser": "Chrome",
+         "platform": "Windows 10",
+         "versions": [
+            "86.0"
+         ]
+      },
+      {
+         "browser": "Firefox",
+         "platform": "Windows 10",
+         "versions": [
+            "82.0",
+            "81.0"
+         ]
+      }
+   ],
+   "run_settings": {
+      "cypress_config_file": "cypress.json",
+      "build_name": "hrmTestBetaV1.0.1",
+      "parallels": 1,
+      "specs": "./cypress/integration/features/homeOrangehrmTest.feature",
+      "ignore_files": "",
+      "feature_file_suppport": true,
+      "network": false,
+      "video": true
+   },
+   "tunnel_settings": {
+      "tunnel": false,
+      "tunnelName": null
+   }
+}
