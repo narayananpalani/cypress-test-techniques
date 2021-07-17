@@ -44,6 +44,12 @@ It takes just 5 minutes to setup cypress framework 🚀
 2. npm run test:allurereport
 3. npm run generatereport
 
+## LambdaTest Cross Browser Tests
+1. npm i -g lambdatest-cypress-cli
+2. lambdatest-cypress init
+3. lambdatest-cypress run
+Detailed Video: [LambdaTest Integration with Cypress Framework](https://youtu.be/zg5yj_yNkjQ)
+
 ## Visual Test
 1. npm run test:visual-base
 2. npm run test:visual-actual
