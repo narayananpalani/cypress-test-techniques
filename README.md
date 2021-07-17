@@ -48,6 +48,7 @@ It takes just 5 minutes to setup cypress framework 🚀
 1. npm i -g lambdatest-cypress-cli
 2. lambdatest-cypress init
 3. lambdatest-cypress run
+
 Detailed Video: [LambdaTest Integration with Cypress Framework](https://youtu.be/zg5yj_yNkjQ)
 
 ## Visual Test
