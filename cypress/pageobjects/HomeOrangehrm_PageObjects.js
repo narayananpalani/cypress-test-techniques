@@ -16,6 +16,9 @@ const jobTitleDropdown_pim = '//*[@id=\'empsearch_job_title\']'
 const searchBtn_pim = '//*[@id=\'searchBtn\']'
 const searchResults = '//*[@id=\'resultTable\']'
 const supervisorPIMtab = '//*[@id=\'empsearch_supervisor_name\']'
+const empIdPIMTab = '//*[@id=\'empsearch_id\']'
+const empNamePIMTab = '//*[@id=\'empsearch_employee_name_empName\']'
+
 
 export const homeOrangehrmPage = {
   checkAdminTab () {
@@ -76,8 +79,8 @@ export const homeOrangehrmPage = {
   jobTitleDropdown () {
     cy.get('select')
       .xpath(jobTitleDropdown_pim)
-      .select('Sales Manager')
-      .should('have.value', '1')
+      .select('Sales Representative')
+      .should('have.value', '13')
   },
   clickSearchbtn () {
     cy.xpath(searchBtn_pim).click()
@@ -152,11 +155,45 @@ export const homeOrangehrmPage = {
   navJobtitleusingKeyboard () {
     cy.xpath(supervisorPIMtab).click().tab().focused(jobTitleDropdown_pim)
   },
-
+  navempNameusingKeyboard () {
+    cy.xpath(empIdPIMTab).click().tab({shift: true}).focused(empNamePIMTab)
+  },
+  enterempNameusingKeyboard () {
+    cy.focused(empNamePIMTab).type('Peter')
+  },
   selectjobTitleusingKeyboard () {
-    cy.focused(jobTitleDropdown_pim).type('{downarrow}sales{downarrow}{enter}')
+    cy.xpath(jobTitleDropdown_pim).type('{enter}{downArrow}sales{downArrow}{enter}')
   },
   pressSearchusingKeyboard () {
     cy.xpath(searchBtn_pim).type('{enter}')
   },
+
+  pressAltLeftusingKeyboard(){
+   cy.xpath(pimTab_Homepage).type('{alt}{leftArrow}')
+
+  },
+  pressAltRightusingKeyboard(){
+    cy.xpath(admin_tabxPath_Homepage).type('{alt}{rightArrow}')
+
+   },
+   pressAltRightusingKeyboard(){
+    cy.xpath(admin_tabxPath_Homepage).type('{alt}{rightArrow}')
+
+   },
+   pressPageDownusingKeyboard(){
+    cy.xpath(admin_tabxPath_Homepage).type('{pageDown}')
+   },
+   pressPageUpusingKeyboard(){
+    cy.xpath(admin_tabxPath_Homepage).type('{pageUp}')
+   },
+   pressUpDownRightLeftusingKeyboard(){
+   cy.get('body').type(
+    '{uparrow}{uparrow}{downarrow}{downarrow}{leftarrow}{rightarrow}{leftarrow}{rightarrow}')
+   },
+   pressSelectAllusingKeyboard(){
+    cy.xpath(admin_tabxPath_Homepage).type('{selectAll}')
+   },
+   pressMoveToEndusingKeyboard(){
+    cy.xpath(admin_tabxPath_Homepage).type('{moveToEnd}')
+   },
 }

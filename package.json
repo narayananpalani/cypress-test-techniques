@@ -46,7 +46,7 @@
     "allure-commandline": "2.0.0",
     "colon-names": "1.0.0",
     "cucumber-html-reporter": "^5.2.0",
-    "cypress": "6.1.0",
+    "cypress": "^8.2.0",
     "cypress-audit": "^0.3.0",
     "cypress-axe": "^0.8.1",
     "cypress-cucumber-preprocessor": "4.0.0",
