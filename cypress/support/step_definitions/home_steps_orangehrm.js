@@ -147,6 +147,14 @@ Then('search results should be displayed successfully', () => {
 When('I navigate to jobtitle dropdown using keyboard functionality', () => {
   homeOrangehrmPage.navJobtitleusingKeyboard()
 })
+When('I navigate to employee name field using keyboard functionality', () => {
+  homeOrangehrmPage.navempNameusingKeyboard()
+})
+When('I enter the name Peter using keyboard', () => {
+  homeOrangehrmPage.enterempNameusingKeyboard()
+})
+
+
 //And I press enter on dropdown of jobtitle to choose sales manager
 When('I press enter on dropdown of jobtitle to choose sales manager', () => {
   homeOrangehrmPage.selectjobTitleusingKeyboard()
@@ -155,3 +163,27 @@ When('I press enter on dropdown of jobtitle to choose sales manager', () => {
 When('I press enter on search button of pim tab', () => {
   homeOrangehrmPage.pressSearchusingKeyboard()
 })
+
+When('I use keyboard to navigate to go back to the previous page', () => {
+  homeOrangehrmPage.pressAltLeftusingKeyboard()
+})
+
+When('I use keyboard to navigate to go to the next page', () => {
+  homeOrangehrmPage.pressAltRightusingKeyboard()
+})
+When('I use keyboard to perform page up', () => {
+  homeOrangehrmPage.pressPageUpusingKeyboard()
+})
+When('I use keyboard to perform page down', () => {
+  homeOrangehrmPage.pressPageDownusingKeyboard()
+})
+When('I use keyboard to perform select all', () => {
+  homeOrangehrmPage.pressSelectAllusingKeyboard()
+})
+When('I use keyboard to perform Move to End', () => {
+  homeOrangehrmPage.pressMoveToEndusingKeyboard()
+})
+When('I use keyboard to perform multiple arrows from left right up down', () => {
+  homeOrangehrmPage.pressUpDownRightLeftusingKeyboard()
+})
+
